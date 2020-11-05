@@ -7,20 +7,6 @@
 using namespace std;
 
 vector <string> v;
-int bin(string x)
-{
-	int ans = 0;
-	int licz = 1;
-	for (int i = x.size() - 1; i >= 0; i--)
-	{
-		if (x[i] == '-')
-			ans *= -1;
-		if (x[i] == '1')
-			ans += licz;
-		licz *= 2;
-	}
-	return ans;
-}
 
 int main(int argc, char** argv) {
 	ifstream file1("liczby.txt");
